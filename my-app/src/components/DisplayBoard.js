@@ -1,4 +1,4 @@
-const DisplayBoard = ({numberOfBooks, getAllBook}) => {
+const DisplayBoard = ({numberOfItems, getAllItems}) => {
     
     return(
         <div className="display-wrapper">
@@ -6,11 +6,11 @@ const DisplayBoard = ({numberOfBooks, getAllBook}) => {
                 <div className="display-board">
                     <h4>생성된 수</h4>
                     <div className="number">
-                    {numberOfBooks}
+                    {numberOfItems}
                     </div>
                 </div>
                 <div className="get-button">
-                    <button onClick={() => getAllBook()}>Get all Books</button>
+                    <button onClick={() => getAllItems()}>생성 내역</button>
                 </div>
             </div>
         </div>

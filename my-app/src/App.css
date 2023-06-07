@@ -101,6 +101,7 @@ button {
   align-items: center;
   height: 100px;
   padding-bottom: 2rem;
+  width: 100%
 }
 
 .display-box {
@@ -172,4 +173,11 @@ footer {
   color: rgb(92, 115, 174);
   background-color: #fff;
   bottom: 0;
+}
+
+.flex--div--wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
