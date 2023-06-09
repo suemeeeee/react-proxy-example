@@ -1,14 +1,22 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, html {
   margin: 0;
   height:100%; 
   overflow: auto;
   background-color: rgb(58, 58, 58);
+  font-family: "GmarketSansMedium";
 }
 
 .main-wrapper {
   margin: 0;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #e3ffda;
   margin-top: 5rem;
   border-radius: 4rem 4rem 0 0;
   bottom: 0;
@@ -22,9 +30,9 @@ body, html {
 .header {
   width: 100%;
   padding: 2%;
-  color: rgb(255, 255, 255);
+  color: rgb(40, 160, 40);
   text-align: center;
-  text-shadow: 2px 2px 4px rgb(158, 178, 228);
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
 }
 
 .form-wrapper{
@@ -44,12 +52,12 @@ body, html {
   padding: 1rem;
   border: 1px solid rgb(205, 205, 205);
   border-radius: 0.5rem;
-  box-shadow: 0px 7px 2px 2px rgba(42, 42, 42, 0.2);
+  box-shadow: 0px 7px 2px 2px rgba(108, 108, 108, 0.2);
 }
 
 .form:hover {
   border: 1px solid rgb(203, 218, 255);
-  box-shadow: 0px 7px 2px 2px rgba(47, 91, 127, 0.2);
+  box-shadow: 0px 7px 2px 2px rgba(33, 33, 33, 0.2);
   transition: 1s ease;
 }
 
@@ -83,16 +91,27 @@ body, html {
 .input-group input:focus {
   outline: none !important; 
   border-color: rgb(203, 218, 255); 
-  box-shadow: 0 0 5px rgb(203, 218, 255); 
+  box-shadow: 0 0 5px rgb(203, 218, 255);
+}
+
+.input-group > label {
+  font-size: 1rem;
 }
 
 button {
   height: 40px;
-  width: 100px;
-  background-color: rgb(158, 178, 228);
+  width: 100%;
+  background-color: rgb(99, 214, 73);
   border: none;
   border-radius: 0.5rem;
   color: #fff;
+
+  padding: 1rem;
+  font-size: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .display-wrapper {
@@ -143,7 +162,7 @@ button {
 }
 
 .table-scroll {
-  height: 450px;
+  height: 350px;
   overflow: scroll;
 }
 
@@ -159,7 +178,7 @@ th, td {
 }
 
 .odd:hover {
-  background-color: rgb(203, 218, 255);
+  background-color: rgb(165, 255, 176);
   transition: 1s ease;
 }
 
@@ -170,7 +189,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(92, 115, 174);
+  color: rgb(30, 74, 17);
   background-color: #fff;
   bottom: 0;
 }
